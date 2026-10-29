@@ -1,0 +1,17 @@
+:root {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #26382e;
+  background: #f3f5f4;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --text: #26382e;
+  --muted: #708078;
+  --accent: #2c684c;
+  --surface: #ffffff;
+  --border: #e3e9e5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 680px; }
+button { -webkit-app-region: no-drag; }
