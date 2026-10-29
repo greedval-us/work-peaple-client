@@ -43,7 +43,6 @@ const checkedAt = computed(() => snapshot.value
       <button class="check-button" type="button" :disabled="isLoading" @click="checkConnection">
         {{ isLoading ? 'Проверяем…' : 'Проверить ещё раз' }}
       </button>
-      <p class="scope-note">На этом этапе доступна проверка подключения.</p>
     </div>
   </section>
 </template>
@@ -71,6 +70,5 @@ const checkedAt = computed(() => snapshot.value
 .check-button:hover:not(:disabled) { background: #23563e; }
 .check-button:focus-visible { outline: 3px solid #a9d3bd; outline-offset: 3px; }
 .check-button:disabled { opacity: 0.6; cursor: wait; }
-.scope-note { margin: 0; color: var(--muted); font-size: 12px; }
 @media (prefers-reduced-motion: no-preference) { .status-loading .status-dot { animation: pulse 1.2s ease-in-out infinite; } @keyframes pulse { 50% { opacity: 0.3; } } }
 </style>

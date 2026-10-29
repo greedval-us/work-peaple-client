@@ -15,8 +15,6 @@ export type HealthResult =
   | { ok: true; data: HealthSnapshot }
   | { ok: false; error: { code: HealthErrorCode; message: string } }
 
-export interface WorkPeopleApi {
-  getHealth(): Promise<HealthResult>
-}
+export type { WorkPeopleApi } from './api'
 
 export const HEALTH_CHECK_CHANNEL = 'workpeople:health:check'

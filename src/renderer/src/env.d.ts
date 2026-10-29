@@ -1,4 +1,4 @@
-import type { WorkPeopleApi } from '../../shared/health'
+import type { WorkPeopleApi } from '../../shared/api'
 
 declare global {
   interface Window {
